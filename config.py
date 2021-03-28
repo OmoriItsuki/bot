@@ -18,7 +18,7 @@ class Config(IniDeserializer):
     local_timezone = Field(default='UTC')
     local_language = Field(default='EN')
 
-    ignore_bots = BooleanField(default=False)
+    ignore_bots = BooleanField(default=True)
 
     DEFAULT = Section(
         patreon_role,
